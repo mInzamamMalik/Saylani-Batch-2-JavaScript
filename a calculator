@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+<style>
+    p{
+        font-size: 32px;
+        text-shadow: 0px 0px 4px #6894ff;
+    }
+    span{
+        color: red;
+        text-shadow: 0px 0px 0.6px black;
+    }
+</style>
+</head>
+<body>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<hr/>
+<p>Har prompt mai galat value enter kar k zarooor check karen,</p><hr/>
+<p>And cancel ka button press karnay say kya hota hai ye check karen</p><hr/>
+<p>I hope you will enjoy it!!</p><hr />
+<p>This is Inzamam Malik from batch2 2nd-shift</p><hr/>
+<span>a step to flexible programming with help of our great teachers</span>
+<script>
+
+    function chk(v1){
+        var a = v1;
+        var b = +a;
+
+        if (b.toString() === "NaN"){
+            alert("you have entered letter," +
+                    "\nplease refresh the page and try again with valid number," +
+                    "\nprogram is terminating for this time.");
+            exit()
+        }
+        if(v1 === ""){
+            alert("you have not entered any value," +
+                "\nplease refresh the page and try again with valid number," +
+                "\nprogram is terminating for this time.");
+            exit()
+        }
+        if(v1.toString()=== "null"){
+            exit();
+        }
+    }
+    function add(v1,v2){
+        return +v1 + +v2;
+    }
+    function sub(v1,v2){
+        return +v1 - +v2;
+    }
+    function mul(v1,v2){
+        return +v1 * +v2;
+    }
+    function div(v1,v2){
+        return +v1 / +v2;
+    }
+    var firstNum = prompt("Enter a number");
+    chk(firstNum);
+    var secondNum = prompt("Enter another number");
+    chk(secondNum);
+
+    var operator = prompt("Enter a sign:  +  -  /  or  *");
+    if(operator === "+"){
+        alert(add(firstNum,secondNum));     exit();  }
+    if(operator === "-"){
+        alert(sub(firstNum,secondNum));     exit();  }
+    if(operator === "*"){
+        alert(mul(firstNum,secondNum));     exit();  }
+    if(operator === "/"){
+        alert(div(firstNum,secondNum));     exit();  }
+    if(operator === ""){
+        alert ("you have not entered any sign\ntry with correct sign next time\nprogram is terminating for this time");exit()}
+    if(operator !== "+"&&"-"&&"*"&&"/"&&""){
+        alert("your entered sign was invalid\ntry with correct sign\nprogram is exiting"); exit();}
+
+</script>
+</body>
+</html>
